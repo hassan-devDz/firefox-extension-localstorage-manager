@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Local Storage Manager",
+  "version": "1.0",
+  "description": "View and edit Local Storage for the current website.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Manage Local Storage",
+    "default_icon": "icon.svg"
+  },
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
