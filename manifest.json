@@ -1,23 +1,26 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Local Storage Manager",
   "version": "1.0",
   "description": "View and edit Local Storage for the current website.",
   "homepage_url": "https://github.com/hassan-devDz/firefox-extension-localstorage-manager",
   "developer": {
-    "name": "Hassan",
+    "name": "Tamer Benhana",
     "url": "https://github.com/hassan-devDz"
   },
   "permissions": [
     "activeTab"
   ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "browser_specific_settings": {
     "gecko": {
       "id": "localstorage-manager@hassan-devDz.github.com",
-      "strict_min_version": "57.0"
+      "strict_min_version": "109.0"
     }
   },
-  "browser_action": {
+  "action": {
     "default_popup": "popup.html",
     "default_title": "Manage Local Storage",
     "default_icon": "icon.svg"
